@@ -1,0 +1,13 @@
+[Unit]
+Description=Sync the repository
+Wants=syncrepo.timer
+
+[Service]
+User=exampleuser # User here!
+Wants=network-online.target
+After=network-online.target
+ExecStartPre=/bin/sh -c 'until ping -c1 archlinux.org; do sleep 1; done;'
+ExecStart=/bin/bash -c '/usr/bin/syncrepo' # Refer to your executable here
+
+[Install]
+WantedBy=multi-user.target

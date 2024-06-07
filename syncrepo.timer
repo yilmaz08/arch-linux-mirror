@@ -1,0 +1,13 @@
+[Unit]
+Description=Sync the repository
+Requires=backupDrive.service
+Wants=network-online.target
+After=network-online.target
+
+[Timer]
+Unit=syncrepo.service
+OnBootSec=2min # Syncs repo 2 minutes after boot.
+OnUnitActiveSec=6h # Syncs repo every 6 hours.
+
+[Install]
+WantedBy=timers.target
