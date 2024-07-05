@@ -1,7 +1,7 @@
 # mirror.timtal.com.tr
 A Tier 2 Arch Linux mirror supported by [Teknopark Istanbul Vocational and Technical Anatolian High School](https://teknoparkistanbul.meb.k12.tr/) and its students.
 
-Syncs from: rsync://mirrors.xtom.ee/archlinux/ (a tier 1 mirror) \
+Syncs from: rsync://mirrors.pidginhost.com/Arch/ (a tier 1 mirror) \
 Sync interval: Every 6 hours \
 Geoghraphical location: Turkiye (Istanbul)
 
