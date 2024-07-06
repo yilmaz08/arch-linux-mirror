@@ -30,11 +30,11 @@ After creating the directories you should own them.
 sudo chown -R (yourusername):(yourgroupname) /path/to/mirror/directory
 ```
 ### Sync executable
-After deciding [what mirror to sync from](https://archlinux.org/mirrors/) and target directory. You can create a syncing executable. You can use **syncrepo** (in the repository here) and put it in **/usr/bin/**.
+After deciding [what mirror to sync from](https://archlinux.org/mirrors/) and target directory. You can create a syncing executable. You can use **syncrepo.sh** (in the repository here) and put it in **/usr/bin/**.
 
 Then make it executable with:
 ```
-sudo chmod a+x /usr/bin/syncrepo
+sudo chmod a+x /usr/bin/syncrepo.sh
 ```
 
 **You have to edit the bash command based on your needs**

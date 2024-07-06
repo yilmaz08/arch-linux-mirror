@@ -7,7 +7,7 @@ User=exampleuser # User here!
 Wants=network-online.target
 After=network-online.target
 ExecStartPre=/bin/sh -c 'until ping -c1 archlinux.org; do sleep 1; done;'
-ExecStart=/bin/bash -c '/usr/bin/syncrepo' # Refer to your executable here
+ExecStart=/bin/bash -c '/usr/bin/syncrepo.sh' # Refer to your executable here
 
 [Install]
 WantedBy=multi-user.target
