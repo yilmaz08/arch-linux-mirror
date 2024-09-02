@@ -51,11 +51,9 @@ Service file must be placed at /etc/systemd/system/ directory. You can use **syn
 Timer file must be placed at /etc/systemd/system/ directory. You can use **syncrepo.timer** (in the repository here) as a base.
 **You have to edit this timer based on your needs**
 
-Then you need to enable timer so it starts on boot:
+Then you need to enable and start the timer:
 ```
-sudo systemctl enable syncrepo.timer
-
-sudo systemctl start syncrepo.timer # if you are not going to reboot
+sudo systemctl enable --now syncrepo.timer
 ```
 
 And finally you are done! You have a directory that is kept up-to-date. It should be published now!
